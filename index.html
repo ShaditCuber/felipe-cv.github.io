@@ -3,176 +3,300 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Felipe Ignacio Bastidas López</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="shortcut icon" href="imagen.jpeg">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive resume cv</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="lado_izquierdo">
-            <div class="textoPerfil">
-                <div class="imgBx">
-                    <img src="imagen.jpeg" alt="">
-                </div>
-                <h2>Felipe Bastidas<br><span>Desarrollador Full Stack</span></h2>
-            </div>
-            <!-- Info Contacto -->
-            <div class="infoContacto">
-                <h3 class="titulo">Info Contacto</h3>
-                <ul>
-                    <li>
-                        <span class="icono"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <a class="texto" href="mailto:felipeignacio.fibl@gmail.com">felipeignacio.fibl@gmail.com</a>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="" class="nav__logo">Felipe</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="bx bx-home nav__icon"></i> Inicio
+                        </a>
                     </li>
-                    <li>
-                        <span class="icono"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="texto">+56993739524</span>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i> Perfil
+                        </a>
                     </li>
-                    <li>
-                        <span class="icono"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                        <a class="texto" href="https://www.linkedin.com/in/felipe-bastidas-fibl"
-                            target="_blank">felipe-bastidas-fibl</a>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i> Educación
+                        </a>
                     </li>
-                    <li>
-                        <span class="icono"><i class="fa fa-github" aria-hidden="true"></i></span>
-                        <a class="texto" href="https://github.com/ShaditCuber" target="_blank">ShaditCuber</a>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i> Habilidades
+                        </a>
                     </li>
-                    <li>
-                        <span class="icono"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="texto">Coronel, Concepción Chile</span>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i> Experiencia
+                        </a>
                     </li>
-                </ul>
-            </div>
-            <!-- Educacion -->
-            <div class="infoContacto educacion">
-                <h3 class="titulo">Educación</h3>
-                <ul>
-                    <li>
-                        <h5>2018 - Actualmente</h5>
-                        <h4>Estudiante Ingeniería Civil en Informática</h4>
-                        <h4>Universidad del Bio-Bio</h4>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i> Certificaciones
+                        </a>
                     </li>
-                    <li>
-                        <h5>2006 - 2017</h5>
-                        <h4>Enseñanza Básica y Media</h4>
-                        <h4>Instituto de Humanidades Antonio Moreno Casamitjana</h4>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class="bx bx-link-external nav__icon"></i> Referencias
+                        </a>
                     </li>
                 </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid-alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/imagen.jpeg" alt="" class="home__img">
+                            <h1 class="home__title">Felipe <b>Bastidas</b></h1>
+                            <h3 class="home__profession">Desarrollador Backend</h3>
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                            <div>
+                                <a download="" href="assets/pdf/felipeBastidasCV.pdf" class="home__button-movil">Descargar CV</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i> Coronel, Concepción Chile
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i> felipeignacio.fibl@gmail.com
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i> +56977655141
+                            </span>
+                        </div>
+
+                    </div>
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Tema" id="theme-button"></i>
+
+                    <i class="bx bx-download generate-pdf" title="Generar PDF" id="resume-button"></i>
+
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">Redes Sociales</h2>
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/felipe-bastidas-fibl/" class="social__link"
+                            target="_blank">
+                            <i class="bx bxl-linkedin-square social__icon"></i>@felipebastidas
+                        </a>
+                        <!-- <a href="https://www.linkedin.com/in/felipe-bastidas-fibl/" class="social__liink" target="_blank">
+                                <i class="bx bxl-linkedin-square"></i>@felipebastidas
+                            </a>
+                            <a href="https://www.linkedin.com/in/felipe-bastidas-fibl/" class="social__liink" target="_blank">
+                                <i class="bx bxl-linkedin-square"></i>@felipebastidas
+                            </a> -->
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Perfil</h2>
+                    <p class="profile__description">Estudiante de Ingenieria Civil en Informática
+                        preparado para empezar una nueva experiencia profesional que le permita demostrar sus habilidades de programación y desarrollo de
+                        tecnologías tanto web como de escritorio.
+                        Persona responsable, con logica para desarrollar soluciones a problemas y trabajo en equipo.
+                    </p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Educación</h2>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Enseñanza Básica y Media</h3>
+                                <span class="education__studies">Instituto de Humanidades Antonio Moreno
+                                    Casamitjana</span>
+                                <span class="education__year">2006 - 2017</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Estudiante Ingeniería Civil en Informática</h3>
+                                <span class="education__studies">Universidad del Bio-Bio</span>
+                                <span class="education__year">2018 - Actualmente</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills_data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>PYTHON
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>AWS
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>REACT
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
             </div>
 
-            <div class="infoContacto idiomas">
-                <h3 class="titulo">Idiomas</h3>
-                <ul>
-                    <li>
-                        <span class="texto">Español</span>
-                        <span style="color: white; margin-left: 10px;">90%</span>
-                    </li>
-                    <li>
-                        <span class="texto">Inglés</span>
-                        <span style="color: white; margin-left: 20px;">30%</span>
-                    </li>
-                </ul>
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experiencia</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">DESARROLLADOR DE APLICACIONES</h3>
+                                <span class="experience__company">Desde OCT 2020 a DIC 2020 | PCHOME</span>
+                                <p class="experience__description">Programación de un ChatBot y una Aplicación dedicada
+                                    al Control de inventario, Compras y Ventas de productos de la
+                                    empresa.</p>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">DESARROLLADOR FULL STACK JUNIOR</h3>
+                                <span class="experience__company">Desde DIC 2022 a Fecha Actual | Izied</span>
+                                <p class="experience__description">Transformacion Digital con herramientas de Python y
+                                    AWS</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificaciones</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">BootCamp Coderhouse Python Desarrollo Web (2022)</h3>
+                            <p class="certificate__description">Certificación de Desarrollo Web con Python y Django</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Desarrollo Web con Bootstrap , HTML, CSS, SCSS , JS (2022)
+                            </h3>
+                            <p class="certificate__description">Certificación de Desarrollo Web en Udemy</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Hacking Etico (2022)</h3>
+                            <p class="certificate__description">Certificación de hacking etico en Udemy</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <!-- <section class="references section" id="references">
+                    <h2 class="section-title">Referencias</h2>
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Izied</span>
+                            <h3 class="references__title">Izied</h3>
+                            <ul class="references__contact">
+                                <li>Numero: xxxx</li>
+                                <li>Email : scamus@izied.cl</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section> -->
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h3 class="section-title">Idiomas</h3>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Español
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Ingles
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h3 class="section-title">Intereses</h3>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Musica</span>
+                        </div>
+                        <div class="interests__content">
+                            <i class='bx bx-game interests__icon'></i>
+                            <span class="interests__name">VideoJuegos</span>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
+    </main>
 
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-up-arrow-alt scrolltop__icon'></i>
+    </a>
 
-        <!-- Lado Derecho -->
-        <div class="lado_derecho">
-            <div class="acercaDe">
-                <h2 class="titulo2">Perfil</h2>
-                <p>Estudiante de Ingenieria Civil en Informática, cualificado y preparado para empezar una nueva
-                    experiencia profesional que le permita desarrollar conceptos técnicos
-                    completos y demostrar sus habilidades de programación, desarrollo
-                    tecnologías tanto web como de escritorio. <br><br> Persona responsable, con logica para desarrollar
-                    soluciones a problemas, trabajo en equipo, dominio de variados lenguajes de programación, trabaja en
-                    equipo
-                </p>
-            </div>
-            <div class="acercaDe">
-                <h2 class="titulo2">Experiencia</h2>
-                <div class="box">
-                    <div class="year">
-                        <h5>Dic 2022 - Actual</h5>
-                        <h5>Izied</h5>
-                    </div>
-                    <div class="texto">
-                        <h4>Desarrollador Full Stack Junior</h4>
-                        <p>
-                            Transformacion Digital con herramientas de Python y AWS
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="year">
-                        <h5>Oct 2020 - Dic 2020</h5>
-                        <h5>PcHome</h5>
-                    </div>
-                    <div class="texto">
-                        <h4>Desarrollador de aplicaciones</h4>
-                        <p>Programación de un ChatBot y una Aplicación dedicada al
-                            Control de inventario, Compras y Ventas de productos de la
-                            empresa.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="acercaDe habilidades">
-                <h2 class="titulo2">Habilidades Profesionales</h2>
-                <div class="box">
-                    <h4>Python</h4>
-                    <div style="color: blue; margin-left: 10px;">80%</div>
-                </div>
-                <div class="box">
-                    <h4>HTML</h4>
-                    <div style="color: blue; margin-left: 10px;">70%</div>
-                </div>
-                <div class="box">
-                    <h4>CSS</h4>
-                    <div style="color: blue; margin-left: 10px;">65%</div>
-                </div>
-                <div class="box">
-                    <h4>AWS</h4>
-                    <div style="color: blue; margin-left: 10px;">50%</div>
-                </div>
-                <div class="box">
-                    <h4>Java</h4>
-                    <div style="color: blue; margin-left: 10px;">75%</div>
-                </div>
-                <div class="box">
-                    <h4>C</h4>
-                    <div style="color: blue; margin-left: 10px;">40%</div>
-                </div>
-                <div class="box">
-                    <h4>JavaScript</h4>
-                    <div style="color: blue; margin-left: 10px;">40%</div>
-                </div>
-                <div class="box">
-                    <h4>Bases de Datos</h4>
-                    <div style="color: blue; margin-left: 10px;">50%</div>
-                </div>
-                <div class="box">
-                    <h4>Microsoft Office</h4>
-                    <div style="color: blue; margin-left: 10px;">60%</div>
-                </div>
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
 
-                <div class="acercaDe intereses">
-                    <h2 class="titulo2">Certificados y Cursos</h2>
-                    <ul>
-                        <li><i class="fa fa-html5" aria-hidden="true"></i></i> Desarrollo Web con Bootstrap , HTML, CSS,
-                            SCSS , JS</li>
-                        <li><i class="fa fa-code" aria-hidden="true"></i></i> Desarrollo Web con Python y Django</li>
-                        <li><i class="fa fa-laptop" aria-hidden="true"></i></i> Hacking Etico</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
